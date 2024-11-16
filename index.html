@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>E-commerce product page</title>
+</head>
+<body>
+<div class="container__ecommerce">
+
+  <header class="header__container">
+    <nav class="navbar">
+
+      <div class="logo-hamburger">
+        <img class="menu" id="menu" src="./images/icon-menu.svg" alt="logo-menu">
+        <img class="logo" src="./images/logo.svg" alt="logo">
+      </div>
+
+      <div class="cart-avatar">
+        <img class="cart" src="./images/icon-cart.svg" alt="cart">
+        <img class="avatar" src="./images/image-avatar.png" alt="avatar">
+        <div class="cart-number"  id="cantUserDiv"><span id="cantUserValue"></span></div>
+      </div>
+    </nav>
+
+
+    <!--header active -->
+    <div class="menuBackground" id="menuBackground">
+      <div class="menuContent">
+        <img class="menuClose " id="close" src="./images/icon-close.svg" alt="">
+        <ul class="nabvar-list">
+          <li class="list"><a href="#">Collections</a></li>
+          <li class="list"><a href="#">Men</a></li>
+          <li class="list"><a href="#">Women</a></li>
+          <li class="list"><a href="#">About</a></li>
+          <li class="list"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- SECCION VISTA DESTOK -->
+    <nav class="navDestok">
+
+      <div class="navDestok__logo-list">
+        <img class="logoDestok" src="./images/logo.svg" alt="logo">
+        <ul class="destok-list_ul"></ul>
+          <li class="destok-list list"><a href="#">Collections</a></li>
+          <li class="destok-list list"><a href="#">Men</a></li>
+          <li class="destok-list list"><a href="#">Women</a></li>
+          <li class="destok-list list"><a href="#">About</a></li>
+          <li class="destok-list list"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navDestok__cart-avatar">
+        <img class="cart" src="./images/icon-cart.svg" alt="cart">
+        <div class="cart-number" id="cantUserDivDestok"><span id="cantUserValueDestok"></span></div>
+        <img class="avatar" src="./images/image-avatar.png" alt="avatar">
+      </div>
+      
+    </nav>
+<!--- SECCION VISTA DESTIOK FINAL-->
+
+<!--- SECCION VISTA MODAL -->
+
+<div class="container-modal" id="modal__container">
+  <h3 class="title_modal">Cart</h3>
+  <div class="content-modal">
+    <img class="img_modal" src="./images/image-product-1-thumbnail.jpg" alt="">
+    <div class="info-modal">
+      <p>Fall Limited Edition Sneakers</p>
+      <p id="precieProducto">$125 x <span id="cantidadProducto"></span> $ <span id="totalProducto">375</span></p>
+    </div>
+    <img class="img_delete" id="iconDelete" src="./images/icon-delete.svg" alt="">
+  </div>
+  <button class="button_modal" id="button_checkout_shoppin">Checkout</button>
+</div>
+<!--- FINAL SECCION VISTA MODAL  -->
+
+<!---  SECCION VISTA MODAL USER TERMINA LA COMPRA  -->
+<div class="container_modal_shoppin" id="modal__container_shoppin">
+  <h3 class="title_modal">thank you for your purchase</h3>
+  <div class="messageFinal">
+      <img class="menuCloseFinal " id="closeFinal" src="./images/icon-close.svg" alt="">
+      <h2 class="visit">visit us again</h2>
+  </div>
+  
+</div>
+
+<!--- FINAL SECCION VISTA MODAL  USER TERMINA LA COMPRA -->
+
+
+  </header>
+
+  <main class="main-container">
+  <div class="container_products">
+        <section class="section-products">
+        
+          <div class="image-products" id="imageProducts">
+            <div class="previus-next">
+              <img class="button-image" id="previous" src="./images/icon-previous.svg" alt="previous">
+              <img class="button-image" id="next" src="./images/icon-next.svg" alt="next">
+            </div>
+          </div>
+        </section>
+
+        <section class="sectionThumbnail">
+        
+          <div>
+            <img class="thum" id="1" src="./images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div>
+            <img class="thum" id="2" src="./images/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div>
+            <img class="thum" id="3" src="./images/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div>
+            <img class="thum" id="4" src="./images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </section>
+  </div>
+
+    
+    <div class="content-articles">
+    
+      <article class="article-container">
+        <h3>Sneaker Company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </article>
+    
+      <article class="precie-container">
+        <div class="descoint">
+          <p class="precie-official">$125.00</p>
+          <p class="precie-procent">50%</p>
+        </div>
+        <div class="anterior">
+          <p class="precie-anterior">$250.00</p>
+        </div>
+      </article>
+    
+     <div class="container__minus-plus-input-button">
+
+      <div class="container-minus-plus-input">
+      
+        <img class="minus" id="minus" src="./images/icon-minus.svg" alt="minus">
+        <input class="input-number" id="inputValue" type="text" value="0">
+        <img class="plus" id="plus" src="./images/icon-plus.svg" alt="plus">
+      </div>
+      
+      <button class="button-add" id="addCartButton">
+        <img class="cart-white" src="./images/icon-cart-white.svg" alt="">
+        Add to cart
+      </button>
+      </div>
+     </div>
+
+  </main>
+    
+
+
+</div>
+  <script src="./main.js"></script>
+</body>
+</html>
